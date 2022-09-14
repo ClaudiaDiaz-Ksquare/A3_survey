@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        body{
+            background-color:cornflowerblue;
+        }
+
+        .container{
+            position: absolute;
+            top: 5%;
+            left: 30%;
+            align-content: center;
+            width: 40%;
+        /* Glass effect */
+            background: rgba(255, 255, 255, 0.63);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5.5px);
+            -webkit-backdrop-filter: blur(5.5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        header{
+            width: 100%;
+            text-align: center;
+        }
+
+        footer{
+            text-align: right;
+            padding: 0.5rem 1rem;
+        }
+    </style>
+
+
+    <div class="container">
+       <header>
+        <h1>JOIN <br> KSQUARE UNIVERSITY </h1>
+       </header>
+
+        <ol>
+            <li>Enter your personal information</li>
+            <div class="form-element">
+                <label for="first-name">First Name</label>
+                <input type="text" name="firstName" id="first-name">
+
+                <label for="last-name">Last Name</label>
+                <input type="text" name="lastName" id="last-name">
+            </div>
+            <br>
+            <li>Enter your contact information</li>
+            <div class="form-element">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="example@email.com">
+                
+                <label for="phone-num">Phone Number</label>
+                <input type="number" name="phoneNumber" id="phone-num">
+            </div>
+            <br>
+            <li>Enter your gender</li>
+            <div class="form-element">
+                <input type="radio" name="gender" id="gender-m">
+                <label for="gender-m">Male</label>
+                <br>
+                <input type="radio" name="gender" id="gender-f">
+                <label for="gender-f">Female</label>
+                <br>
+                <input type="radio" name="gender" id="gender-o">
+                <label for="gender-o">Other</label>
+            </div>
+            <br>
+            <li>Choose your country</li>
+            <div class="form-element">
+                <select name="country">
+                    <option value="0">Select a country</option>
+                    <option value="1">Dominican Republic</option>
+                    <option value="2">Mexico</option>
+                    <option value="3">United States</option>
+                </select>
+            </div>
+            <br>
+            <li>Choose your career path</li>
+            <div class="form-element">
+                <select name="careerPath">
+                    <option value="0">Select an option</option>
+                    <option value="1">JavaScript</option>
+                    <option value="2">Flutter</option>
+                    <option value="3">Salesforce</option>
+                    <option value="4">Oracle</option>
+                    <option value="5">Java</option>
+                </select>
+            </div>
+            <br>
+            <li>Would you like to fill another survey to apply to another career path?</li>
+            <div class="form-element">
+                <input type="checkbox" name="redo_survey" id="yes">
+                <label for="yes">Yes</label>
+                <input type="checkbox" name="redo_survey" id="no">
+                <label for="no">No</label>
+            </div>
+            <br>
+            <li>Please feel free to leave a feedback!</li>
+            <div class="form-element">
+                <textarea name="comments" id="text-area" cols="53" rows="5" placeholder="Enter your comments" id="comments"></textarea>
+            </div>
+        </ol>
+
+        <footer>
+                <label>Thanks for completing the survey!</label> <br>
+                <input type="submit" class="submit-btn">
+        </footer>
+    </div>
+
+
+</body>
+</html>
